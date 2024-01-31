@@ -18,8 +18,10 @@ Explore my projects, skills, and journey in the world of tech and design.
 ```plaintext
 |-- assets
 |   |-- images
-|       |-- screenshot.png
+|       |-- all images
 |-- index.html
-|-- style.css
-|-- script.js
-|-- [Other Project Files...]
+    |-- css
+        |-- style.css
+    |-- js
+        |-- main.js
+|-- README.md
