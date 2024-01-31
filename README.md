@@ -18,10 +18,10 @@ Explore my projects, skills, and journey in the world of tech and design.
 - **Responsive Typography:** Readable text with responsive font sizes for various screen sizes.
 - **Optimized Performance:** Efficient loading times for a seamless browsing experience.
 
-## 📸 Screenshotshttps://github.com/tanmayypramanick/tanmayypramanick.github.io/blob/main/Screenshots/ss3.png
+## 📸 Screenshots
 
-![Screenshot 1](path/to/screenshot1.png](https://github.com/tanmayypramanick/tanmayypramanick.github.io/blob/main/Screenshots/ss1.png)
-![Screenshot 2](path/to/screenshot2.png](https://github.com/tanmayypramanick/tanmayypramanick.github.io/blob/main/Screenshots/ss3.png)
+![Screenshot 1](https://github.com/tanmayypramanick/tanmayypramanick.github.io/blob/main/Screenshots/ss1.png)
+![Screenshot 2](https://github.com/tanmayypramanick/tanmayypramanick.github.io/blob/main/Screenshots/ss3.png)
 
 ## Technologies Used 🛠️
 
