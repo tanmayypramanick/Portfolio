@@ -224,6 +224,10 @@ header {
     text-decoration: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* ----- FEATURED BOX ----- */
 .featured-box {
     position: relative;
