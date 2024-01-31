@@ -2,7 +2,7 @@
 
 Welcome to my portfolio website repository! 🌐
 
-Explore my projects, skills, and journey in the world of web development and design.
+Explore my projects, skills, and journey in the world of tech and design.
 
 ## Technologies Used 🛠️
 
