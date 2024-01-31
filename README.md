@@ -20,8 +20,8 @@ Explore my projects, skills, and journey in the world of tech and design.
 
 ## 📸 Screenshotshttps://github.com/tanmayypramanick/tanmayypramanick.github.io/blob/main/Screenshots/ss3.png
 
-![Screenshot 1]([path/to/screenshot1.png](https://github.com/tanmayypramanick/tanmayypramanick.github.io/blob/main/Screenshots/ss1.png))
-![Screenshot 2]([path/to/screenshot2.png](https://github.com/tanmayypramanick/tanmayypramanick.github.io/blob/main/Screenshots/ss3.png))
+![Screenshot 1](path/to/screenshot1.png](https://github.com/tanmayypramanick/tanmayypramanick.github.io/blob/main/Screenshots/ss1.png)
+![Screenshot 2](path/to/screenshot2.png](https://github.com/tanmayypramanick/tanmayypramanick.github.io/blob/main/Screenshots/ss3.png)
 
 ## Technologies Used 🛠️
 
@@ -30,6 +30,14 @@ Explore my projects, skills, and journey in the world of tech and design.
 - JavaScript
 - Bootstrap
 - Font Awesome
+
+##  License 📄
+
+This project is open-sourced under the MIT License 🥳. You are welcome to clone the repository, but please remember to include the LICENSE file when using my code. And don't forget to show your support by giving this repository a ⭐️!
+
+🚀 **[Visit My Website](https://tanmaypramanick.space/)**
+
+---
 
 
 ## Project Structure 📂
@@ -50,12 +58,7 @@ Explore my projects, skills, and journey in the world of tech and design.
 |-- CNAME
 |-- README.md
 
-##  License 📄
-
-This project is open-sourced under the MIT License 🥳. You are welcome to clone the repository, but please remember to include the LICENSE file when using my code. And don't forget to show your support by giving this repository a ⭐️!
-
-🚀 [Visit My Website](https://tanmaypramanick.space/)
-
 ---
+
 
 
