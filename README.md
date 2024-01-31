@@ -18,10 +18,18 @@ Explore my projects, skills, and journey in the world of tech and design.
 ```plaintext
 |-- assets
 |   |-- images
-|       |-- all images
+|       |-- all images used in the website
 |-- index.html
-    |-- css
+|   |-- css
         |-- style.css
-    |-- js
-        |-- main.js
+
+|   |-- js
+|       |-- main.js
+|--Screenshots
+|   |-- Screenshots.png
+|-- LICENSE
+|-- .gitattributes
+|-- CNAME
 |-- README.md
+
+
