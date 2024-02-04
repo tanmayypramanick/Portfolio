@@ -1,0 +1,237 @@
+/* ----- ABOUT SECTION MEDIA QUERY == 1300px / RESPONSIVE ----- */
+
+@media (max-width: 1300px) {
+    .about-info {
+        padding: 0 4vw;
+        margin-left: -160px;
+        width: 140%;
+        font-size: 14px;
+    }
+
+    .about-photo {
+        display: flex;
+        width: 100%;
+        margin-left: -150px;
+        margin-right: -200px;
+    }
+
+    .about-photo img {
+        width: 260px;
+        height: 300px;
+    }
+
+}
+
+
+@media (max-width: 962px) {
+
+
+    .glimpse-text {
+        font-size: 18px;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .about-photo {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: -10%;
+    }
+
+    .about-photo img {
+        width: 210px;
+        height: 250px;
+        margin: 0 auto;
+
+    }
+
+    .about-info {
+        justify-content: center;
+        align-content: left;
+        min-height: auto;
+        margin: 20px;
+        margin-left: -200px;
+        width: 170%;
+        font-size: 12px;
+
+    }
+
+    .about-info .details-column {
+        margin-inline-start: 0;
+        margin-top: 20px;
+        order: 3;
+        font-size: 10px;
+
+    }
+
+    .about-info .about-details {
+        padding: 20px;
+        order: 999;
+        font-size: small;
+    }
+
+    .about-info p,
+    .about-info .details-column li,
+    .glimpse-text {
+        font-size: 16px;
+    }
+
+    .details-column i {
+        font-size: 14px;
+    }
+
+    .details-column h3 {
+        font-size: 18px;
+    }
+
+    .glimpse-text {
+        font-size: 16px;
+        text-align: left;
+        margin-right: 200px;
+        width: 170%;
+    }
+}
+
+@media (max-width: 780px) {
+    .about-photo {
+        display: none;
+    }
+
+    .about-info {
+        margin: 20px;
+        margin-left: -350px;
+        width: 200%;
+    }
+
+    .details-column {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+    }
+
+    .about-info p,
+    .about-info .details-column li {
+        font-size: 13px;
+    }
+
+    .details-column i {
+        font-size: 14px;
+    }
+
+    .details-column h3 {
+        font-size: 17px;
+    }
+
+    .glimpse-text {
+        font-size: 16px;
+        text-align: left;
+        margin-right: 150px;
+        width: 180%;
+    }
+
+    .section#contact .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info{
+        width: 540px;
+        height: 170px;
+        padding: 20px;
+    }
+    .form-control {
+        width: 200%;
+        height: 75%;
+        margin: 0;
+        padding: 20px;
+        margin-left: -70px;
+    }
+
+    textarea {
+        height: 150px;
+        width: 340px;
+    }
+    .form-button {
+        align-items: center;
+        margin-left: 130px;
+    }
+}
+
+/* ----- ABOUT SECTION MEDIA QUERY == 640px / RESPONSIVE ----- */
+@media only screen and (max-width: 640px) {
+    .glimpse-text {
+        font-size: 15px;
+        text-align: justify;
+        margin-right: 200px;
+        width: 110%;
+        margin-left: 0px;
+    }
+
+    .skills-box {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+
+    .about-info {
+        font-size: 18px;
+        margin-left: -230px;
+        margin-top: -30px;
+        width: 250%;
+        text-align: left;
+    }
+
+    .details-column {
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: left;
+        align-items: left;
+        margin: 0;
+        padding: 0px 10px;
+    }
+
+    .details-column li,
+    i {
+        font-size: 14px;
+    }
+
+    .about-info .skills-box .skills-list span {
+        width: 190%;
+    }
+
+    .about-info .about-details {
+        margin-left: 0;
+    }
+
+    .about-details {
+        flex-direction: column;
+    }
+
+    .about-info h3,
+    .skills-header h3 {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .skills-list span {
+        font-size: 14px;
+    }
+
+    .about-info p,
+    .about-info {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .project-box {
+        margin-right: 10px;
+    }
+
+    .contact-info>p {
+        font-size: 12px;
+        margin-right: 30px;
+        margin-left: 18px;
+    }
+}

@@ -1,0 +1,146 @@
+
+/* ----- CONTACT BOX ----- */
+
+.contact-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    width: 80%;
+    height: 315px;
+    background: var(--second-color);
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.contact-info>h2 {
+    color: var(--color-white);
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.contact-info>p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-white);
+    margin-block: 5px;
+}
+
+.contact-info p>i {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+
+.contact-info::after {
+    background: var(--color-white);
+}
+
+.contact-info:hover.contact-info h2,
+.contact-info:hover.contact-info p,
+.contact-info:hover.contact-info i {
+    color: var(--text-color-second);
+    z-index: 2;
+}
+
+.contact-info a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: var(--text-color-second);
+}
+
+.contact-info:hover a {
+    color: var(--text-color-second);
+    z-index: 2;
+}
+
+/* ----- CONTACT FORM ----- */
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    margin-left: -10px;
+    margin-bottom: -70px;
+}
+
+.form-inputs {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.input-field {
+    width: 50%;
+    height: 55px;
+    background: transparent;
+    border: 2px solid #AAA;
+    border-radius: 10px;
+    padding-inline: 20px;
+    outline: none;
+}
+
+.text-area {
+    width: 100%;
+    margin-top: 15px; 
+}
+textarea {
+    width: 100%;
+    height: 250px;
+    background: transparent;
+    border: 2px solid #AAA;
+    border-radius: 10px;
+    padding: 15px 20px;
+    outline: none;
+    resize: none;
+}
+
+.form-button>.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--second-color);
+    color: var(--color-white);
+}
+
+.form-button>.btn:hover {
+    background: #7148ee;
+}
+
+.form-button i {
+    font-size: 18px;
+    rotate: -45deg;
+    display: flex;
+    align-items: center;
+
+}
+.form-button {
+    margin-top: 15px;
+}
+
+/* ----- CONTACT FORM STYLING ----- */
+.form-control,
+.form-inputs,
+.input-field,
+textarea,
+.form-button,
+.form-button .btn {
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-button i {
+    font-size: 18px;
+    rotate: -45deg;
+}

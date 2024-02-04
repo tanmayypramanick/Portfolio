@@ -1,0 +1,219 @@
+/* ----- ABOUT INFO ----- */
+
+.about-photo {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 130px;
+}
+
+.about-photo img {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.col {
+    margin-inline-start: 20px;
+}
+
+.about-info {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-block: 30px 40px;
+    margin-left: -220px;
+    width: 125%;
+    background: transparent;
+}
+
+.about-info p span{
+    font-size: 38px;
+    font-family: "Abril Fatface", serif;
+}
+
+.col {
+    margin-inline-start: 20px;
+}
+
+.about-info h3 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about-info p {
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--text-color-second);
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 420;
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.details-column {
+    flex: 1;
+}
+
+.details-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.details-column ul {
+    list-style-type: none;
+    padding: 0;
+    color: var(--text-color-second);
+    text-align: left;
+}
+
+.details-column li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-align: left
+}
+
+.details-column li i, a{
+    font-weight: 450;
+}
+
+.details-column strong {
+    font-weight: bold;
+}
+
+.details-column ul {
+    margin-top: 10px;
+}
+
+.logo {
+    width: 24px;
+    margin-right: 8px;
+    margin-bottom: -6px;
+}
+
+
+
+.read-more-btn {
+    cursor: pointer;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    color: var(--text-color-second);
+}
+
+.read-more-btn:hover {
+    color: red;
+}
+
+.description-box {
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--description);
+    box-shadow: 0 0 10px black;
+    z-index: 999;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    border-radius: 14px;
+    padding: 50px 130px;
+    opacity: 0.9;
+    position: fixed;
+}
+
+.description-box ul {
+    text-align: left;
+    margin-left: -100px;
+    margin-right: -100px;
+    color: var(--text-color-second);
+    font-family: "Poppins", sans-serif;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #555;
+    font-size: 18px;
+}
+
+.company-link {
+    color: var(--text-color-second);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.company-link:hover {
+    color: #6429EF;
+}
+
+.glimpse-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 550;
+    color: var(--text-color-second);
+    margin-bottom: 20px;
+    margin-left: 5%;
+    width: 250%;
+}
+
+/* ----- ABOUT / SKILLS BOX ----- */
+.skills-box {
+    margin: 20px 0px;
+    margin-left: 80px;
+}
+
+.skills-header {
+    margin-bottom: 10px;
+    font-family: 'Abril Fatface', serif;
+    font-size: 17px;
+
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skills-list span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: var(--first-color);
+    color: var(--color-white);
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: 450;
+}
+
+.about-section {
+    padding: 80px 0;
+}
+
+.about-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: var(--text-color-second);
+    margin-top: 30px;
+}

@@ -7,10 +7,18 @@
     <!-- --------- BOXICONS ---------- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- --------- CSS ---------- -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/home_page.css">
+    <link rel="stylesheet" href="assets/css/about_page.css">
+    <link rel="stylesheet" href="assets/css/project_page.css">
+    <link rel="stylesheet" href="assets/css/contact_page.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/responsive_style.css">
+    <link rel="stylesheet" href="assets/css/about_page_responsive.css">
+<!-- --------- FONTS ---------- -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap">
-
     <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
     <title>Portfolio | Tanmay </title>
@@ -50,578 +58,84 @@
                 <span class="menu-toggle"><i class="bx bx-menu"></i></span>
             </div>
         </header>
+
         <!-- -------------- MAIN ---------------- -->
 
         <main class="wrapper">
             <!-- -------------- FEATURED BOX ---------------- -->
-            <section class="featured-box" id="home">
-                <div class="featured-text">
-                    <div class="featured-name">
-                        <p><span class="small-text">Hello, my name is </span> <span class="big-text">Tanmay
-                                Pramanick</span><span class="small-text">,</span></p>
-                        <p><span class="small-text">and I'm a </span> <span class="typedText big-text"></span><span
-                                class="small-text">.</span></p>
-                    </div>
-                    <div class="featured-text-info">
-                        <p>Originally from Mumbai, now a Chicago resident. I have a passion for molding pixels into
-                            perfection. Beyond the codes and clouds, I'm currently navigating the academic corridors at Illinois Tech, immersing myself
-                            in the frontiers of Computer Science for my master's exploration.
-                        </p>
-                    </div>
-                    <div class="social_icons">
-                        <a href="https://www.instagram.com/abouttanmayy" target="_blank" class="icon-link">
-                            <div class="icon"><i class="bx bxl-instagram"></i></div>
-                        </a>
-                        <a href="https://www.linkedin.com/in/tanmaypramanick/" target="_blank" class="icon-link">
-                            <div class="icon"><i class="bx bxl-linkedin"></i></div>
-                        </a>
-                        <a href="https://twitter.com/thelazybong__" target="_blank" class="icon-link">
-                            <div class="icon"><i class="bx bxl-twitter"></i></div>
-                        </a>
-                        <a href="https://github.com/tanmayypramanick" target="_blank" class="icon-link">
-                            <div class="icon"><i class="bx bxl-github"></i></div>
-                        </a>
-                        <a href="https://www.facebook.com/tanmay.pramanick.54" target="_blank" class="icon-link">
-                            <div class="icon"><i class="bx bxl-facebook"></i></div>
-                        </a>
-                    </div>
+            <script>
+                fetch('assets/html/home_page.html')
+                    .then(response => response.text())
+                    .then(html => document.querySelector('.wrapper').innerHTML += html);
+            </script>
 
-                </div>
-                <div class="featured-image">
-                    <div class="image">
-                        <img src="assets/images/img.jpg" alt="avatar">
-                    </div>
-                </div>
-            </section>
             <!-- -------------- ABOUT BOX ---------------- -->
-            <section class="section" id="about">
-                <div class="top-header">
-                    <h1>About Me</h1>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="about-photo">
-                            <img src="assets/images/img2.jpg" alt="avatar">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="about-info">
-                            <p>
-                                <span>S</span>urfing the waves of tech evolution, I've spent the last five years
-                                seamlessly merging
-                                design and development, pushing the digital frontier. My keyboard is the brush painting
-                                a legacy of excellence and innovation. Amid my master's voyage, I've conquered Mobile
-                                App Dev, ML, NLP, and algorithm design. Currently delving into the realms of Cloud
-                                computing and advanced database organization, I adapt with each challenge. Step into my
-                                tech odyssey, where every line of code tells a story of growth and exploration!
-                            </p>
+            <script>
+                fetch('assets/html/about_page.html')
+                    .then(response => response.text())
+                    .then(html => document.querySelector('.wrapper').innerHTML += html);
+            </script>
 
-                            <!-- Education -->
-                            <br>
-                            <div class="about-details">
-                                <div class="details-column">
-                                    <h3>Education</h3>
-                                    <ul>
-                                        <li>
-                                            <img src="assets/images/iit.png" alt="Illinois Institute of Technology Logo"
-                                                class="logo">
-                                            <strong>Illinois Institute of Technology, Chicago, IL</strong><br>
-                                            <i>Master's of Computer Science<br>
-                                                <strong>GPA: 3.66</strong><br>
-                                                Aug 2023 - May 2025</i>
-                                        </li>
-                                        <li>
-                                            <img src="assets/images/sppu.png" alt="SPPU Logo" class="logo">
-                                            <strong>Savitribai Phule Pune University, India</strong><br>
-                                            <i>Bachelor of Computer Engineering<br>
-                                                <strong>GPA: 3.55<br></strong>
-                                                Aug 2018 - July 2022</i>
-                                        </li>
-                                    </ul>
-                                </div>
+            <!-- -------------- PROJECTS BOX ---------------- -->
+            <script>
+                fetch('assets/html/project_page.html')
+                    .then(response => response.text())
+                    .then(html => document.querySelector('.wrapper').innerHTML += html);
+            </script>
 
-                                <!-- Experience -->
-                                <div class="details-column">
-                                    <h3>Experience</h3>
-                                    <ul>
-                                        <li>
-                                            <strong> Operations Executive</strong><br>
-                                            <img src="assets/images/hexaware.png" alt="Hexaware Logo" class="logo">
-                                            <i><a href="https://hexaware.com" target="_blank"
-                                                    class="company-link">Hexaware Technologies, India</a></i><br>
-                                            <i><span class="date">Feb 2023 - July 2023</span></i><br>
-                                            <button class="read-more-btn" onclick="toggleDescription('exp1')">Read
-                                                More</button>
-                                            <div id="exp1" class="description-box">
-                                                <ul>
-                                                    <li>• Accomplished Customer Support Specialist aiding US clients
-                                                        across diverse services: Indian Visa, passport reissue, OCI
-                                                        card, Global Entry Program, and Police Clearance Certificate
-                                                        applications.</li>
-                                                    <li>• Demonstrated exceptional proficiency in guiding clients
-                                                        through calls and emails, ensuring a seamless application
-                                                        journey.</li>
-                                                    <li>• Optimized client experience by expertly managing documents and
-                                                        procedures, achieving high satisfaction. Recognized for
-                                                        strategic initiatives, maintaining Quality Report scores above
-                                                        95%.</li>
-                                                </ul>
-                                                <span class="close-btn" onclick="closeDescription('exp1')">X</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <strong> Web Developer Intern</strong><br>
-                                            <img src="assets/images/vigo.png" alt="Vigo Logo" class="logo">
-                                            <i><a href="https://vigoinfotech.com" target="_blank"
-                                                    class="company-link">Vigo Infotech Pvt Ltd, India</a></i><br>
-                                            <i><span class="date">Mar 2022 - Sep 2022</span></i><bR>
-                                            <button class="read-more-btn" onclick="toggleDescription('exp2')">Read
-                                                More</button>
-                                            <div id="exp2" class="description-box">
-                                                <ul>
-                                                    <li>• Facilitated success of "Janam Janam Ka Sath" matrimonial site
-                                                        with a 10,000+ user base. Played a pivotal role in developing
-                                                        ERPs for security firms, resulting in a substantial 20%
-                                                        operational efficiency boost as part of a collaborative team
-                                                        effort.</li>
-                                                    <li>• Designed websites using HTML, CSS, and foundational
-                                                        JavaScript. Applied theory to real-world tasks, gaining
-                                                        practical experience and corporate insights.</li>
-                                                </ul>
-                                                <span class="close-btn" onclick="closeDescription('exp2')">X</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+            <!-- -------------- CONTACT BOX ---------------- -->
+            <script>
+                fetch('assets/html/contact_page.html')
+                    .then(response => response.text())
+                    .then(html => document.querySelector('.wrapper').innerHTML += html);
+            </script>
+        </main>
 
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <i>
-                            <p class="glimpse-text">Here's a glimpse of the tools and technologies I've gracefully
-                                danced
-                                with – both in the past and present:</p>
-                        </i>
-                    </div>
-                </div>
-                <!-- Skill Boxes -->
-                <div class="row">
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Languages:</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>Python</span>
-                            <span>SQL</span>
-                            <span>JAVA</span>
-                            <span>JavaScript</span>
-                            <span>Dart</span>
-                            <span>HTML 5</span>
-                            <span>CSS 3</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Frameworks/Libraries:</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>Pandas</span>
-                            <span>NLTK</span>
-                            <span>Flutter</span>
-                            <span>Numpy</span>
-                            <span>Pygame</span>
-                            <span>Matplotlib</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Technologies:</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>Machine Learning</span>
-                            <span>CNN</span>
-                            <span>Bootstrap</span>
-                            <span>NLP</span>
-                            <span>Cloud Services</span>
-                            <span>RESTful API</span>
-                            <span>Linux Bash Scripts</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Project Management Skills:</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>Agile</span>
-                            <span>Scrum</span>
-                            <span>GitHub</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Certifications:</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>Google Cloud Platform</span>
-                            <span>Python Data Structures by University of Michigan</span>
-                            <span>100-day Python Bootcamp by Udemy</span>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <div class="row">
-                    <div class="col">
-                        <i>
-                            <p class="glimpse-text">As the dynamic digital world unfolds and progresses, I remain
-                                committed to pushing boundaries, ever eager to learn, adapt, and innovate!</p>
-                        </i>
-                    </div>
-                </div>
-    </div>
-    </section>
-
-
-    <!-- -------------- PROJECTS BOX ---------------- -->
-    <section class="section" id="projects">
-        <div class="top-header">
-            <h1>Projects</h1>
-        </div>
-        <div class="project-container" id="projectContainer">
-            <!-- Project Boxes -->
-            <div class="project-box" onclick="toggleDescription('project1')">
-                <img src="assets/images/weatherapp.png" alt="Project 1 Image">
-                <h3>Weather App | Flutter</h3>
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <p>Tanmay Pramanick .</p>
             </div>
-            <div id="project1" class="description-box">
-                <label>
-                    <ul>
-                        <li>
-                            <strong>Cutting-Edge Weather App Development: </strong>Built a Flutter weather
-                            application, leveraging the power of real-time
-                            OpenWeather API to deliver unparalleled precision in weather forecasts spanning over
-                            200+
-                            locations.
-                        </li>
-                        <li>
-                            <strong>Exceptional Reliability through Rigorous Testing: </strong>Achieved an
-                            exceptional 99% bug-free reliability through meticulous integration,
-                            exhaustive widget testing, and robust unit testing protocols. This rigorous testing
-                            framework ensures the app's seamless performance and stability.
-                        </li>
-                        <li>
-                            <strong>Advanced Customization and Metric Enhancements: </strong>Enriched user
-                            experience through advanced customization, featuring personalized
-                            favorites with Shared Preferences for effortless location-based weather updates.
-                            Implemented metric enhancements, allowing users to seamlessly switch between
-                            miles/kilometers per hour and degrees Celsius/Fahrenheit, catering to a diverse user
-                            base and enhancing app versatility.
-                        </li>
-                        <li>
-                            <strong>User-Friendly Interface Design: </strong>In addition to the technical prowess,
-                            the app boasts an aesthetically designed,
-                            user-friendly interface, presenting detailed weather information with elegance.
-                        </li>
-
-                    </ul>
-                </label>
-                <span id="closeBtn_project1" class="close-btn" onclick="closeDescriptionWithButton('project1')">X</span>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-
-            <div class="project-box" onclick="toggleDescription('project2')">
-                <h3>Drowsiness Detection System | Machine Learning</h3>
-                <img src="assets/images/drowsy.jpg" alt="Project 2 Image">
+            <div class="social_icons">
+                <a href="https://www.instagram.com/abouttanmayy" target="_blank" class="icon-link">
+                    <div class="icon"><i class="bx bxl-instagram"></i></div>
+                </a>
+                <a href="https://www.linkedin.com/in/tanmaypramanick/" target="_blank" class="icon-link">
+                    <div class="icon"><i class="bx bxl-linkedin"></i></div>
+                </a>
+                <a href="https://twitter.com/thelazybong__" target="_blank" class="icon-link">
+                    <div class="icon"><i class="bx bxl-twitter"></i></div>
+                </a>
+                <a href="https://github.com/tanmayypramanick" target="_blank" class="icon-link">
+                    <div class="icon"><i class="bx bxl-github"></i></div>
+                </a>
+                <a href="https://www.facebook.com/tanmay.pramanick.54" target="_blank" class="icon-link">
+                    <div class="icon"><i class="bx bxl-facebook"></i></div>
+                </a>
             </div>
-            <div id="project2" class="description-box">
-                <label>
-                    <ul>
-                        <li>
-                            <strong>Drowsiness Detection System Development: </strong>Designed and deployed a
-                            cutting-edge Drowsiness Detection System utilizing Convolutional
-                            Neural Network (CNN) architecture. This innovative system adeptly assesses driver
-                            fatigue levels by intricately analyzing subtle eye and mouth cues in real-time.
-                            Leveraging the power of Python, the implementation harnesses the capabilities of machine
-                            learning for precise image classification, ensuring a robust and accurate assessment of
-                            driver alertness.
-                        </li>
-                        <li>
-                            <strong>Real-Time Alert Integration using Pygame: </strong>To enhance driver awareness,
-                            the system seamlessly integrates pygame for instant alert
-                            activation, providing timely notifications to mitigate potential risks associated with
-                            drowsy driving. This project not only showcases technical prowess in CNN-based solutions
-                            but also underscores a commitment to advancing road safety through technology.
-                        </li>
-                        <li>
-                            <strong>Recognition in Academic and Technological Discourse: </strong>Demonstrating
-                            expertise in the field, the outcomes of this project have been recognized
-                            and published in the esteemed Dickensian Journal (VOLUME 22, ISSUE 5, 2022), solidifying
-                            its contribution to the academic and technological discourse. This endeavor not only
-                            exemplifies technical proficiency but also underscores a dedication to addressing
-                            real-world challenges with innovative and impactful solutions.
-                        </li>
-                    </ul>
-                </label>
-                <span id="closeBtn_project2" class="close-btn" onclick="closeDescriptionWithButton('project2')">X</span>
+            <div class="bottom-footer">
+                <p>Copyright &copy; 2024 <a href="#home" style="text-decoration: none;">Tanmay Pramanick</a> - All
+                    rights
+                    reserved
+                </p>
             </div>
-
-            <div class="project-box" onclick="toggleDescription('project3')">
-                <h3>Battleship Game | RestFul API</h3>
-                <img src="assets/images/battleship.jpg" alt="Project 3 Image">
-            </div>
-            <div id="project3" class="description-box">
-                <label>
-                    <ul>
-                        <li>
-                            <strong>Seamless RESTful API Integration: </strong>Battleship is a project focused on
-                            seamlessly
-                            integrating a RESTful API into a mobile application. The app facilitates user
-                            registration, login, and engaging Battleships gameplay against both human and AI
-                            opponents. It showcases proficiency in asynchronous operations using the http package to
-                            communicate with the provided RESTful service.
-                        </li>
-                        <li>
-                            <strong>Robust User Authentication and Session Management: </strong>Key features include
-                            secure user authentication, persistent session token management,
-                            and comprehensive game tracking, displaying ongoing and completed Battleships matches.
-                            The user-friendly interface allows initiating games with human or AI opponents, with a
-                            responsive game board for ship placement.
-                        </li>
-                        <li>
-                            <strong>Comprehensive Game Tracking and User Interface Design: </strong>Utilizing
-                            modular code structure and state management techniques, the implementation
-                            strictly adheres to the provided specifications. The project emphasizes skills in REST
-                            API integration, HTTP communication, and effective UI design for both small and large
-                            screens. It achieves a responsive design, ensuring an optimal gaming experience across
-                            various screen sizes.
-                        </li>
-                        <li>
-                            <strong>Modular Code Structure and State Management: </strong>Incorporating external
-                            packages such as http and shared_preferences, the codebase
-                            adheres to organized widget breakdowns, residing in distinct directories. The RESTful
-                            API documentation guides the implementation of user authentication, game management, and
-                            gameplay functionalities, enhancing skills in API utilization and endpoint interaction.
-                        </li>
-                        <li>
-                            <strong>Strategic Use of External Packages and API Documentation Implementation:
-                            </strong>Overall, this app showcases adeptness in Flutter development, RESTful API
-                            integration,
-                            and effective implementation of asynchronous operations, contributing to a robust and
-                            engaging Battleships gaming experience.
-                        </li>
-                    </ul>
-                </label>
-                <span id="closeBtn_project3" class="close-btn" onclick="closeDescriptionWithButton('project3')">X</span>
-            </div>
-
-
-            <!-- View More -->
-            <!--<div class="view-more" id="viewMore" onclick="showMoreProjects()">
-                <p>View More...</p>
-            </div>
--->
-            <!-- Additional Project Boxes (Initially hidden) -->
-            <div class="project-box" onclick="toggleDescription('project4')">
-                <h3>Flashcards | Quiz </h3>
-                <img src="assets/images/flashcard.jpg" alt="Project 4 Image">
-            </div>
-            <div id="project4" class="description-box">
-                <label>
-                    <ul>
-                        <li>
-                            <strong>Flashcards Application Proficiency Enhancement: </strong>Elevated my proficiency
-                            in Flutter development through Flashcards, where I
-                            implemented a feature-rich multi-page application. Employed CRUD operations, utilizing
-                            the sqflite package for local SQLite database persistence, ensuring seamless creation,
-                            editing, and deletion of decks and flashcards.
-                        </li>
-                        <li>
-                            <strong>Responsive Design and Navigation Mastery: </strong>Implemented responsive
-                            design, dynamically adapting UI layouts based on screen size
-                            changes, and showcased navigation prowess using MaterialApp's Navigator. Leveraged state
-                            management with the provider package, enabling efficient handling of UI state across
-                            various pages.
-                        </li>
-                        <li>
-                            <strong>JSON Integration for Efficient Data Initialization: </strong>Successfully
-                            integrated JSON file initialization for decks and cards, demonstrating
-                            adept use of path_provider and path. This project underscored my skills in UI
-                            responsiveness, database management, and effective utilization of Flutter packages.
-                        </li>
-                    </ul>
-                </label>
-                <span id="closeBtn_project4" class="close-btn" onclick="closeDescriptionWithButton('project4')">X</span>
-            </div>
-
-            <div class="project-box" onclick="toggleDescription('project5')">
-                <h3>Translation | Speech Recognition</h3>
-                <img src="assets/images/translation.png" alt="Project 5 Image">
-            </div>
-            <div id="project5" class="description-box">
-                <label>
-                    <ul>
-                        <li>
-                            <strong>Leveraged Google API for Multilingual Translation: </strong>Integrated the power
-                            of Google API to
-                            enable seamless translation between any two languages, offering users a versatile tool
-                            for breaking language barriers.
-                        </li>
-                        <li>
-                            <strong>Incorporated Speech Recognition Capabilities: </strong>Implemented cutting-edge
-                            Flutter packages
-                            to integrate speech recognition, allowing users to effortlessly translate spoken words
-                            from one language to another, enhancing accessibility and user convenience.
-                        </li>
-                        <li>
-                            <strong>Dynamic Language Pairing Options: </strong>Provided users with a dynamic
-                            language selection
-                            interface, allowing them to translate content bidirectionally between various languages,
-                            expanding the application's utility across a wide range of linguistic needs.
-                        </li>
-                        <li>
-                            <strong>Optimized User Interaction: </strong>Employed intuitive design principles to
-                            create a
-                            user-friendly interface, ensuring a smooth and efficient translation experience while
-                            maintaining focus on technical robustness and performance.
-                        </li>
-                    </ul>
-                </label>
-                <span id="closeBtn_project5" class="close-btn" onclick="closeDescriptionWithButton('project5')">X</span>
-            </div>
-
-            <div class="project-box" onclick="toggleDescription('project6')">
-                <h3>SQLibra: Library Management System</h3>
-                <img src="assets/images/library.jpg" alt="Project 6 Image">
-            </div>
-            <div id="project6" class="description-box">
-                <label>
-                    <ul>
-                        <li>
-                            <strong>Revolutionized Library Management with SQLibra Integration: </strong>Transformed
-                            traditional
-                            library systems by incorporating the advanced 'SQLibra' library management system,
-                            leveraging SQL proficiency to optimize resource organization, ensuring a highly
-                            efficient and scalable solution.
-                        </li>
-                        <li>
-                            <strong>Efficient Resource Tracking: </strong>Implemented a streamlined management
-                            system to seamlessly
-                            track every aspect of library operations. From book circulation to loan periods,
-                            returns, deadlines, and penalty fines, our solution provides comprehensive oversight,
-                            ensuring optimal resource utilization and enhancing user satisfaction.
-                        </li>
-                        <li>
-                            <strong>Data-Driven Decision Making: </strong>Utilized the power of SQL databases to
-                            enable data-driven
-                            decision-making in library management. This not only enhances the efficiency of
-                            administrative tasks but also empowers librarians to make informed decisions for
-                            resource allocation and collection development.
-                        </li>
-                        <li>
-                            <strong>Scalable and Robust Architecture: </strong>Engineered a scalable and robust
-                            architecture using
-                            Python and SQL, ensuring the system's reliability and adaptability to the evolving needs
-                            of a dynamic library environment. This results in a high-performance library management
-                            solution that stands at the forefront of modern information organization.
-                        </li>
-                    </ul>
-                </label>
-                <span id="closeBtn_project6" class="close-btn" onclick="closeDescriptionWithButton('project6')">X</span>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- -------------- CONTACT BOX ---------------- -->
-    <section class="section" id="contact">
-        <div class="top-header">
-            <h1>Get in touch !</h1>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="bx-right-down"></i></h2>
-                    <p><i class="bx bx-envelope"></i> Email: tanmaypramanick06@gmail.com</p>
-                    <p><i class="bx bx-phone"></i> Mobile: +1 312 975 5575</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="form-control">
-                    <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="30a61a27-e1b4-49f1-b74c-a42ba72c5114">
-                        <div class="form-inputs">
-                            <input type="text" name="name" class="input-field" placeholder="Name" required>
-                            <input type="email" name="email" class="input-field" placeholder="Email" required>
-                        </div>
-                        <div class="text-area">
-                            <textarea name="message" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="form-button">
-                            <button class="btn">Send</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    </main>
-    <!-- --------------- FOOTER --------------- -->
-    <footer>
-        <div class="top-footer">
-            <p>Tanmay Pramanick .</p>
-        </div>
-        <div class="middle-footer">
-            <ul class="footer-menu">
-                <li class="footer_menu_list">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#about">About</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="social_icons">
-            <a href="https://www.instagram.com/abouttanmayy" target="_blank" class="icon-link">
-                <div class="icon"><i class="bx bxl-instagram"></i></div>
-            </a>
-            <a href="https://www.linkedin.com/in/tanmaypramanick/" target="_blank" class="icon-link">
-                <div class="icon"><i class="bx bxl-linkedin"></i></div>
-            </a>
-            <a href="https://twitter.com/thelazybong__" target="_blank" class="icon-link">
-                <div class="icon"><i class="bx bxl-twitter"></i></div>
-            </a>
-            <a href="https://github.com/tanmayypramanick" target="_blank" class="icon-link">
-                <div class="icon"><i class="bx bxl-github"></i></div>
-            </a>
-            <a href="https://www.facebook.com/tanmay.pramanick.54" target="_blank" class="icon-link">
-                <div class="icon"><i class="bx bxl-facebook"></i></div>
-            </a>
-        </div>
-        <div class="bottom-footer">
-            <p>Copyright &copy; 2024 <a href="#home" style="text-decoration: none;">Tanmay Pramanick</a> - All rights
-                reserved
-            </p>
-        </div>
-    </footer>
+        </footer>
     </div>
     <!-- ----- TYPING JS Link ----- -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -629,6 +143,10 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- ----- MAIN JS ----- -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/scroll_reveal.js"></script>
+    <script src="assets/js/description_box.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 </body>

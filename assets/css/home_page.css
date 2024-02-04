@@ -1,0 +1,178 @@
+/* ----- FEATURED BOX ----- */
+.featured-box {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    min-height: 700px;
+}
+
+/* ----- FEATURED TEXT BOX ----- */
+.featured-text {
+    position: relative;
+    display: flex;
+    padding: 0 8vw;
+    height: 120vh;
+    width: 100%;
+    z-index: 5;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.featured-name {
+    font-family: "Abril Fatface", serif;
+    font-size: 40px;
+    color: var(--text-color-second);
+    margin-bottom: 20px;
+}
+
+.small-text {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.big-text {
+    font-size: 40px;
+    color: var(--second-color);
+    font-weight: 20;
+
+}
+
+.typedText {
+    text-transform: capitalize;
+    color: var(--text-color-third);
+    font-weight: 20;
+}
+
+.featured-text-info {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 0;
+    font-size: 17px;
+    width: 500px;
+    color: var(--text-color-second);
+    font-weight: 500;
+    font-style: italic;
+    text-align: justify;
+
+}
+
+.featured-text-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.featured-text-btn>.blue-btn {
+    background: var(--first-color);
+    color: var(--color-white);
+}
+
+.featured-text-btn>.blue-btn:hover {
+    background: var(--first-color-hover);
+}
+
+.social_icons {
+    display: flex;
+    margin-top: 1em;
+    gap: 30px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px var(--text-color-second);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.icon:hover {
+    color: var(--first-color);
+}
+
+/* Add this to your existing CSS */
+
+.icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    font-size: 30px;
+    text-decoration: none;
+    /* Remove underline */
+    color: var(--text-color-second);
+    /* Set default icon color */
+    transition: color 0.3s ease;
+    /* Add a smooth color transition */
+}
+
+.icon-link:hover {
+    color: var(--first-color);
+    /* Change icon color on hover to the theme color */
+}
+
+
+/* ----- FEATURED IMAGE BOX ----- */
+.featured-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 60vh;
+    width: 40%;
+}
+
+.image {
+    margin: auto 0;
+    width: 500px;
+    /* Adjust the width as needed */
+    height: 600px;
+    /* Adjust the height as needed */
+    border-radius: 55% 45% 55% 45%;
+    overflow: hidden;
+    animation: imgFloat 7s ease-in-out infinite;
+}
+
+.image img {
+    width: 100%;
+    /* Make sure the image fills the container */
+    height: 100%;
+    /* Make sure the image fills the container */
+    object-fit: cover;
+}
+
+@keyframes imgFloat {
+    50% {
+        transform: translateY(10px);
+        border-radius: 45% 55% 45% 55%;
+    }
+}
+
+.scroll-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--text-color-second);
+    background: var(--color-white);
+    border-radius: 30px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.scroll-btn i {
+    font-size: 20px;
+}

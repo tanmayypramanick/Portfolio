@@ -1,0 +1,162 @@
+/* ----- PROJECTS BOX ----- */
+
+.project-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-size: cover;
+    background-position: center;
+    margin: 0px 10px;
+}
+
+.project-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.project-box:hover img {
+    opacity: 1;
+}
+
+body.dark-mode .project-box img {
+    opacity: 0.5;
+}
+
+body.dark-mode .project-box:hover img {
+    opacity: 0.8;
+}
+
+.project-box i {
+    font-size: 50px;
+    color: #00B5E7;
+    margin-bottom: 25px;
+}
+
+.project-box label {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.project-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -100%;
+    right: 0;
+    background: rgba(58, 41, 114, 0.8);
+    border-radius: 20px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-box:hover::after {
+    opacity: 1;
+    bottom: 0;
+}
+
+.project-box:hover i,
+.project-box:hover h3 {
+    color: var(--color-white);
+    z-index: 2;
+}
+
+.view-more {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    background: var(--second-color);
+    color: var(--color-white);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #555;
+    font-size: 18px;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.description-box:hover .close-btn {
+    display: block;
+}
+
+.project-box.hidden .close-btn {
+    display: none;
+}
+
+.project-box h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color-second);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    z-index: 2;
+    text-align: center;
+    margin: 0;
+}
+
+.project-box label {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-second);
+    z-index: 2;
+    position: relative;
+}
+
+.project-box label ul {
+    margin-left: -90px;
+    margin-right: -100px;
+    text-align: left;
+}
+
+
+.github-icon {
+    display: flex;
+    position: relative;
+    bottom: -37px;
+    margin-top: 10px;
+    right: 80px;
+    width: 78px;
+    height: 42px;
+    align-items: center;
+    justify-content: right;
+}
+
+.dark-mode .github-icon {
+    filter: invert(1);
+}

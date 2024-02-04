@@ -1,0 +1,143 @@
+
+/* ----- MEDIA QUERY == 1052px / RESPONSIVE ----- */
+
+@media (max-width: 1231px) {
+
+    header,
+    .featured-text {
+        padding: 0 4vw;
+    }
+
+    .featured-image {
+
+        width: 100%;
+    }
+
+    .image,
+    .image img {
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 962px) {
+    header {
+        position: relative;
+    }
+
+    .nav-button .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav_menu.display-menu {
+        display: flex;
+    }
+
+    .nav_menu {
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(20px);
+        width: 300px;
+        padding: 40px 0;
+        border-radius: 20px 0 20px 20px;
+        box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav_list {
+        margin: 20px 0;
+    }
+
+    .nav-link {
+        color: black;
+    }
+
+    .featured-box {
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .featured-text {
+        width: 100%;
+        order: 2;
+        justify-content: center;
+        align-content: center;
+        min-height: 20vh;
+        margin-top: -70px;
+    }
+    .small-text{
+        font-size: 20px;
+    }
+    .big-text{
+        font-size: 32px;
+    }
+
+    .social_icons {
+        margin-top: 0px;
+    }
+
+    .featured-image {
+        order: 1;
+        justify-content: center;
+        min-height: 150px;
+        width: 100%;
+        margin-top: -60px;
+    }
+
+    .image,
+    .image img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .featured-text-info {
+        width: 100%;
+        margin-top: -20px;
+        font-size: 15px;
+    }
+
+    .nav_menu_list {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 0 15px;
+        height: 40px;
+    }
+
+}
+
+/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
+
+@media only screen and (max-width: 540px) {
+    .featured-name {
+        font-size: 40px;
+    }
+
+    .project-box {
+        width: 100%;
+    }
+
+    .form-inputs {
+        flex-direction: column;
+    }
+
+    .input-field {
+        width: 100%;
+    }
+    .bottom-footer {
+        font-size: 12px;
+    }
+}
