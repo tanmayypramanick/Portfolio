@@ -139,22 +139,22 @@
         width: 540px;
         height: 170px;
         padding: 20px;
+        margin-left: -30px;
     }
     .form-control {
-        width: 200%;
+        width: 450px;
         height: 75%;
         margin: 0;
         padding: 20px;
-        margin-left: -70px;
+        margin-left: -35px;
     }
 
     textarea {
-        height: 150px;
-        width: 340px;
+        height: 200px;
     }
     .form-button {
         align-items: center;
-        margin-left: 130px;
+        margin-left: 50px;
     }
 }
 
