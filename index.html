@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/responsive_style.css">
     <link rel="stylesheet" href="assets/css/about_page_responsive.css">
-<!-- --------- FONTS ---------- -->
+    <!-- --------- FONTS ---------- -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap">
     <!-- --------- FAVICON ---------- -->
@@ -62,32 +62,21 @@
         <!-- -------------- MAIN ---------------- -->
 
         <main class="wrapper">
-            <!-- -------------- FEATURED BOX ---------------- -->
+            <div id="home-section"></div>
+            <div id="about-section"></div>
+            <div id="project-section"></div>
+            <div id="contact-section"></div>
             <script>
-                fetch('assets/html/home_page.html')
-                    .then(response => response.text())
-                    .then(html => document.querySelector('.wrapper').innerHTML += html);
-            </script>
+                async function fetchAndAppend(url, containerId) {
+                    const response = await fetch(url);
+                    const html = await response.text();
+                    document.getElementById(containerId).innerHTML = html;
+                }
 
-            <!-- -------------- ABOUT BOX ---------------- -->
-            <script>
-                fetch('assets/html/about_page.html')
-                    .then(response => response.text())
-                    .then(html => document.querySelector('.wrapper').innerHTML += html);
-            </script>
-
-            <!-- -------------- PROJECTS BOX ---------------- -->
-            <script>
-                fetch('assets/html/project_page.html')
-                    .then(response => response.text())
-                    .then(html => document.querySelector('.wrapper').innerHTML += html);
-            </script>
-
-            <!-- -------------- CONTACT BOX ---------------- -->
-            <script>
-                fetch('assets/html/contact_page.html')
-                    .then(response => response.text())
-                    .then(html => document.querySelector('.wrapper').innerHTML += html);
+                fetchAndAppend('assets/html/home_page.html', 'home-section');
+                fetchAndAppend('assets/html/about_page.html', 'about-section');
+                fetchAndAppend('assets/html/project_page.html', 'project-section');
+                fetchAndAppend('assets/html/contact_page.html', 'contact-section');
             </script>
         </main>
 
