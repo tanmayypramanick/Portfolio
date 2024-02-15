@@ -37,26 +37,6 @@ This project is open-sourced under the MIT License 🥳. You are welcome to clon
 
 🚀 **[Visit My Website](https://tanmaypramanick.space/)**
 
----
-
-
-## Project Structure 📂
-
-```plaintext
-|-- assets
-|   |-- images
-|       |-- all images used in the website
-|   |-- css
-        |-- style.css
-|   |-- js
-|       |-- main.js
-|--Screenshots
-|   |-- Screenshots.png
-|-- index.html
-|-- LICENSE
-|-- .gitattributes
-|-- CNAME
-|-- README.md
 
 ---
 
