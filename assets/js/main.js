@@ -42,7 +42,13 @@ function showMoreProjects() {
 
 // TYPING EFFECT
 var typingEffect = new Typed(".typedText", {
-  strings: ["Student", "UI Designer", "App Developer", "Photographer", "Travel Enthusiast", "SneakerHead"],
+  strings: [
+    "Software Engineer",
+    "Backend Developer",
+    "AI / ML Enthusiast",
+    "Full-Stack Developer",
+    "Open Source Contributor"
+  ],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
